@@ -20,6 +20,9 @@
 // FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THE JSON FILE LIST
 */
 
+const title = "IMDB + Royer's Top 8 Movies";
+const owner = "Royer";
+const github = "https://github.com/royer-z/IS219Project3Repo";
 
 const vue_app = new Vue({
       el: '#vue_app',
@@ -39,6 +42,6 @@ const vue_app = new Vue({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
       }
-})
+});
 	
 
