@@ -20,10 +20,6 @@
 // FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THE JSON FILE LIST
 */
 
-const title = "IMDB + Royer's Top 8 Movies";
-const owner = "Royer";
-const github = "https://github.com/royer-z/IS219Project3Repo";
-
 const vue_app = new Vue({
       el: '#vue_app',
       // This automatically imports your movies.json file and puts it into
@@ -35,9 +31,12 @@ const vue_app = new Vue({
       },
       data: {
             // This holds your movies.json data.
-            movies: []
+            movies: [],
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            title: "IMDB + Royer's Top 8 Movies",
+            owner: "Royer",
+            github: "https://github.com/royer-z/IS219Project3Repo"
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
