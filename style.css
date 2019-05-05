@@ -106,6 +106,12 @@ body {
     font-weight: 200;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
+    background-color: #008700;
+    color: #FFFFFF;
+}
+.dislikes {
+    background-color: #f65a5b;
+    color: #FFFFFF;
 }
 
 /* This makes sure your Github Button is centered */
@@ -120,7 +126,15 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+.likes:hover {
+    background-color: #9edd87;
+    color: #008700;
+}
 
+.dislikes:hover {
+    background-color: #fdd6d6;
+    color: #F65A5B;
+}
 
 
 
