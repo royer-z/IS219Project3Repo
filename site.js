@@ -40,6 +40,80 @@ const vue_app = new Vue({
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            makeTextDate: function (dateArray) {
+                  let month = dateArray[1];
+                  let day = dateArray[2];
+                  let year = dateArray[0];
+
+                  switch (month) {
+                        case 1:
+                              month = "January";
+                              break;
+                        case 2:
+                              month = "February";
+                              break;
+                        case 3:
+                              month = "March";
+                              break;
+                        case 4:
+                              month = "April";
+                              break;
+                        case 5:
+                              month = "May";
+                              break;
+                        case 6:
+                              month = "June";
+                              break;
+                        case 7:
+                              month = "July";
+                              break;
+                        case 8:
+                              month = "August";
+                              break;
+                        case 9:
+                              month = "September";
+                              break;
+                        case 10:
+                              month = "October";
+                              break;
+                        case 11:
+                              month = "November";
+                              break;
+                        case 12:
+                              month = "December";
+                              break;
+                        default:
+                              month = "N/A";
+                  }
+                  return month+" "+day+", "+year;
+            },
+            like: function (index) {
+                  this.movies[index].likes++;
+            },
+            dislike: function (index) {
+                  this.movies[index].dislikes++;
+            },
+            posterClick: function (index) {
+                  let numPosters = this.movies[index].posters.length;
+                  let currentIndex = this.movies[index].posterindex;
+                  let newIndex = currentIndex + 1;
+
+                  if (newIndex > numPosters - 1) {
+                        this.movies[index].posterindex = 0;
+                  }
+                  else {
+                        this.movies[index].posterindex = newIndex;
+                  }
+            },
+            timeText: function (minutes) {
+                  let h = 0;
+                  let m = 0;
+
+                  h = Math.floor(minutes / 60);
+                  m = minutes % 60;
+
+                  return h+"h"+" "+m+"m";
+            }
       }
 });
 	
