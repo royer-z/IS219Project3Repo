@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<html lang="en-US" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
 	<title>IS219 Gallery (Project 3)</title>
 
@@ -40,9 +40,9 @@
 	      <div class="container">
 
 	        <div class="col-md-6"> 
-	            <div class="thumbnail" v-for="movie in movies">
+	            <div class="thumbnail" v-for="(movie, index) in movies">
 
-						<img class="poster" v-bind:src="movie.posters[0]"/>
+						<img class="poster" alt="Movie poster" v-bind:src="movie.posters[movie.posterindex]" v-on:click="posterClick(index)"/>
 						<div class="imageInfo">{{ movie.posterindex }}</div>
 						
 						<p class="title">{{ movie.title }} ({{ movie.country }})</p>
@@ -52,8 +52,8 @@
 						<p class="websites">Websites: <a v-bind:href="movie.imdb" target="_blank">IMDB</a> | <a v-bind:href="movie.website" target="_blank">Official</a></p>
 						
 			            <div class="social">
-			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
-			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}</p>
+			              <p class="likes" v-on:click="like(index)"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movie.likes }}</p>
+			              <p class="dislikes" v-on:click="dislike(index)"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}</p>
 			            </div>
 	            </div> 
 	        </div>
