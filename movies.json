@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "The Avengers",
+            "iscore": 8.1,
+            "rating": "PG-13",
+            "runtime": 143,
+            "released": [2012, 5, 4],
+            "country": "USA",
+            "posters": ["img/theavengers.jpg", "img/theavengers2.png"],
+            "imdb": "https://www.imdb.com/title/tt0848228/",
+            "website": "https://marvelcinematicuniverse.fandom.com/wiki/The_Avengers",
+            "likes": 800,
+            "dislikes": 400,
+            "posterindex": 0
+      },
+      {
+            "title": "Iron Man",
+            "iscore": 7.9,
+            "rating": "PG-13",
+            "runtime": 126,
+            "released": [2008, 5, 2],
+            "country": "USA",
+            "posters": ["img/ironman.jpg", "img/ironman2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0371746/",
+            "website": "https://en.wikipedia.org/wiki/Iron_Man_(2008_film)",
+            "likes": 1500,
+            "dislikes": 750,
+            "posterindex": 0
+      },
+      {
+            "title": "Pacific Rim",
+            "iscore": 6.9,
+            "rating": "PG-13",
+            "runtime": 131,
+            "released": [2013, 7, 12],
+            "country": "USA",
+            "posters": ["img/pacificrim.jpg", "img/pacificrim2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1663662/",
+            "website": "https://www.warnerbros.com/movies/pacific-rim/",
+            "likes": 2000,
+            "dislikes": 1000,
+            "posterindex": 0
       }
 ]
